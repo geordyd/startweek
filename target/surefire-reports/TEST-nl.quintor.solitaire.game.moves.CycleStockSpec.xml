@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0.082" tests="7" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version\target\test-classes;C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version\target\classes;C:\Users\Danil\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Danil\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Danil\.m2\repository\org\assertj\assertj-core\3.8.0\assertj-core-3.8.0.jar;C:\Users\Danil\.m2\repository\org\spockframework\spock-core\1.1-groovy-2.4\spock-core-1.1-groovy-2.4.jar;C:\Users\Danil\.m2\repository\org\codehaus\groovy\groovy-all\2.4.15\groovy-all-2.4.15.jar;C:\Users\Danil\.m2\repository\com\athaydes\spock-reports\1.5.0\spock-reports-1.5.0.jar;C:\Users\Danil\.m2\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;C:\Users\Danil\.m2\repository\org\slf4j\slf4j-simple\1.7.13\slf4j-simple-1.7.13.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="user.country.format" value="NL"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin"/>
+    <property name="sun.java.command" value="C:\Users\Danil\AppData\Local\Temp\surefire16407452397696327797\surefirebooter17254443214702034489.jar C:\Users\Danil\AppData\Local\Temp\surefire16407452397696327797 2019-09-03T10-48-29_778-jvmRun1 surefire105635694467694667tmp surefire_017473897594903592073tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version\target\test-classes;C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version\target\classes;C:\Users\Danil\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Danil\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Danil\.m2\repository\org\assertj\assertj-core\3.8.0\assertj-core-3.8.0.jar;C:\Users\Danil\.m2\repository\org\spockframework\spock-core\1.1-groovy-2.4\spock-core-1.1-groovy-2.4.jar;C:\Users\Danil\.m2\repository\org\codehaus\groovy\groovy-all\2.4.15\groovy-all-2.4.15.jar;C:\Users\Danil\.m2\repository\com\athaydes\spock-reports\1.5.0\spock-reports-1.5.0.jar;C:\Users\Danil\.m2\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;C:\Users\Danil\.m2\repository\org\slf4j\slf4j-simple\1.7.13\slf4j-simple-1.7.13.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Danil"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.4"/>
+    <property name="idea.version2019.2.1" value="true"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Danil\AppData\Local\Temp\surefire16407452397696327797\surefirebooter17254443214702034489.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.4+10-LTS"/>
+    <property name="user.name" value="Danil"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Danil\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Danil\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.4"/>
+    <property name="user.dir" value="C:\Users\Danil\Documents\INF03\Minor Quintor\eventweek-solitair-student-group_version"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\AdoptOpenJDK\jdk-11.0.4.11-hotspot\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Danil\.windows-build-tools\python27\;C:\Users\Danil\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Danil\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Danil\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MySQL\My;C:\Users\Danil\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.4+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Testing Cycle with empty stock and waste" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0">
+    <failure message="Expected exception of type &apos;nl.quintor.solitaire.game.moves.ex.MoveException&apos;, but no exception was thrown" type="org.spockframework.runtime.WrongExceptionThrownError">org.spockframework.runtime.WrongExceptionThrownError: Expected exception of type 'nl.quintor.solitaire.game.moves.ex.MoveException', but no exception was thrown
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Testing Cycle with empty stock and waste(CycleStockSpec.groovy:37)
+</failure>
+  </testcase>
+  <testcase name="Testing Cycle with empty waste" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0">
+    <failure message="Condition not satisfied:&#10;&#10;gameState.stockCycles == 1&#10;|         |           |&#10;|         0           false&#10;0 move(s) played in 00:00:00 for 0 points&#10;" type="org.spockframework.runtime.SpockComparisonFailure">org.spockframework.runtime.SpockComparisonFailure: 
+Condition not satisfied:
+
+gameState.stockCycles == 1
+|         |           |
+|         0           false
+0 move(s) played in 00:00:00 for 0 points
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Testing Cycle with empty waste(CycleStockSpec.groovy:48)
+</failure>
+  </testcase>
+  <testcase name="Testing Cycle with empty waste and multiple cards in stock" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0">
+    <failure message="Condition not satisfied:&#10;&#10;gameState.stockCycles == 1&#10;|         |           |&#10;|         0           false&#10;0 move(s) played in 00:00:00 for 0 points&#10;" type="org.spockframework.runtime.SpockComparisonFailure">org.spockframework.runtime.SpockComparisonFailure: 
+Condition not satisfied:
+
+gameState.stockCycles == 1
+|         |           |
+|         0           false
+0 move(s) played in 00:00:00 for 0 points
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Testing Cycle with empty waste and multiple cards in stock(CycleStockSpec.groovy:61)
+</failure>
+  </testcase>
+  <testcase name="Given a stock having: [CLUBS ACE] and a waste having: [] cycling 1 times should result in stock having: [CLUBS ACE]&#10;         waste having: [] and cycle count of 1" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0.046">
+    <failure message="Condition not satisfied:&#10;&#10;gameState.stockCycles == cycleCount&#10;|         |           |  |&#10;|         0           |  1&#10;|                     false&#10;0 move(s) played in 00:00:00 for 0 points&#10;" type="org.spockframework.runtime.SpockComparisonFailure">org.spockframework.runtime.SpockComparisonFailure: 
+Condition not satisfied:
+
+gameState.stockCycles == cycleCount
+|         |           |  |
+|         0           |  1
+|                     false
+0 move(s) played in 00:00:00 for 0 points
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:82)
+</failure>
+  </testcase>
+  <testcase name="Given a stock having: [CLUBS ACE] and a waste having: [CLUBS TWO] cycling 1 times should result in stock having: [CLUBS ACE, CLUBS TWO]&#10;         waste having: [] and cycle count of 0" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0.004">
+    <failure message="Condition failed with Exception:&#10;&#10;assertThat(gameState.stock).containsExactly(resultingStock.toArray())&#10;|          |         |      |               |              |&#10;|          |         |      |               |              [CLUBS ACE, CLUBS TWO]&#10;|          |         |      |               [CLUBS ACE, CLUBS TWO]&#10;|          |         |      java.lang.AssertionError: &#10;|          |         |      Actual and expected should have same size but actual size was:&#10;|          |         |        &lt;1&gt;&#10;|          |         |      while expected size was:&#10;|          |         |        &lt;2&gt;&#10;|          |         |      Actual was:&#10;|          |         |        &lt;[CLUBS ACE]&gt;&#10;|          |         |      Expected was:&#10;|          |         |        &lt;[CLUBS ACE, CLUBS TWO]&gt;&#10;|          |         [CLUBS ACE]&#10;|          0 move(s) played in 00:00:00 for 0 points&#10;org.assertj.core.api.ListAssert@1&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError"><![CDATA[org.spockframework.runtime.ConditionFailedWithExceptionError: 
+Condition failed with Exception:
+
+assertThat(gameState.stock).containsExactly(resultingStock.toArray())
+|          |         |      |               |              |
+|          |         |      |               |              [CLUBS ACE, CLUBS TWO]
+|          |         |      |               [CLUBS ACE, CLUBS TWO]
+|          |         |      java.lang.AssertionError: 
+|          |         |      Actual and expected should have same size but actual size was:
+|          |         |        <1>
+|          |         |      while expected size was:
+|          |         |        <2>
+|          |         |      Actual was:
+|          |         |        <[CLUBS ACE]>
+|          |         |      Expected was:
+|          |         |        <[CLUBS ACE, CLUBS TWO]>
+|          |         [CLUBS ACE]
+|          0 move(s) played in 00:00:00 for 0 points
+org.assertj.core.api.ListAssert@1
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:80)
+Caused by: java.lang.AssertionError: 
+
+Actual and expected should have same size but actual size was:
+  <1>
+while expected size was:
+  <2>
+Actual was:
+  <[CLUBS ACE]>
+Expected was:
+  <[CLUBS ACE, CLUBS TWO]>
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:80)
+]]></failure>
+  </testcase>
+  <testcase name="Given a stock having: [CLUBS ACE, CLUBS TWO] and a waste having: [] cycling 2 times should result in stock having: [CLUBS ACE, CLUBS TWO]&#10;         waste having: [] and cycle count of 1" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0.002">
+    <failure message="Condition not satisfied:&#10;&#10;gameState.stockCycles == cycleCount&#10;|         |           |  |&#10;|         0           |  1&#10;|                     false&#10;0 move(s) played in 00:00:00 for 0 points&#10;" type="org.spockframework.runtime.SpockComparisonFailure">org.spockframework.runtime.SpockComparisonFailure: 
+Condition not satisfied:
+
+gameState.stockCycles == cycleCount
+|         |           |  |
+|         0           |  1
+|                     false
+0 move(s) played in 00:00:00 for 0 points
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:82)
+</failure>
+  </testcase>
+  <testcase name="Given a stock having: [] and a waste having: [CLUBS ACE, CLUBS TWO] cycling 1 times should result in stock having: [CLUBS ACE]&#10;         waste having: [CLUBS TWO] and cycle count of 0" classname="nl.quintor.solitaire.game.moves.CycleStockSpec" time="0.002">
+    <failure message="Condition failed with Exception:&#10;&#10;assertThat(gameState.stock).containsExactly(resultingStock.toArray())&#10;|          |         |      |               |              |&#10;|          |         []     |               [CLUBS ACE]    [CLUBS ACE]&#10;|          |                java.lang.AssertionError: &#10;|          |                Actual and expected should have same size but actual size was:&#10;|          |                  &lt;0&gt;&#10;|          |                while expected size was:&#10;|          |                  &lt;1&gt;&#10;|          |                Actual was:&#10;|          |                  &lt;[]&gt;&#10;|          |                Expected was:&#10;|          |                  &lt;[CLUBS ACE]&gt;&#10;|          0 move(s) played in 00:00:00 for 0 points&#10;org.assertj.core.api.ListAssert@1&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError"><![CDATA[org.spockframework.runtime.ConditionFailedWithExceptionError: 
+Condition failed with Exception:
+
+assertThat(gameState.stock).containsExactly(resultingStock.toArray())
+|          |         |      |               |              |
+|          |         []     |               [CLUBS ACE]    [CLUBS ACE]
+|          |                java.lang.AssertionError: 
+|          |                Actual and expected should have same size but actual size was:
+|          |                  <0>
+|          |                while expected size was:
+|          |                  <1>
+|          |                Actual was:
+|          |                  <[]>
+|          |                Expected was:
+|          |                  <[CLUBS ACE]>
+|          0 move(s) played in 00:00:00 for 0 points
+org.assertj.core.api.ListAssert@1
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:80)
+Caused by: java.lang.AssertionError: 
+
+Actual and expected should have same size but actual size was:
+  <0>
+while expected size was:
+  <1>
+Actual was:
+  <[]>
+Expected was:
+  <[CLUBS ACE]>
+
+	at nl.quintor.solitaire.game.moves.CycleStockSpec.Given a stock having: #stock and a waste having: #waste cycling #cyclingTimes times should result in stock having: #resultingStock
+         waste having: #resultingWaste and cycle count of #cycleCount(CycleStockSpec.groovy:80)
+]]></failure>
+  </testcase>
+</testsuite>

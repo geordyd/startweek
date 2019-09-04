@@ -1,0 +1,1061 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></meta>
+<style>body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+.back-link {
+  font-size: small;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+pre.title {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+pre.narrative {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 23px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 12px;
+}
+
+.feature-toc-error {
+  color: #F89A4F;
+}
+
+.feature-toc-failure {
+  color: #FF8080;
+}
+
+.feature-toc-ignored {
+  color: lightgray;
+}
+
+.feature-toc-pass {
+  color: green;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+.feature-description.ignored .reason {
+  color: black;
+  font-style: italic;
+  font-size: small;
+}
+
+div.extra-info {
+  font-size: small;
+}
+
+div.spec-headers {
+  margin: 4px;
+  font-style: italic;
+}
+
+div.spec-header {
+}
+
+div.issues {
+  margin-top: 6px;
+  padding: 10px 5px 5px 5px;
+  background-color: lemonchiffon;
+  color: black;
+  font-weight: 500;
+  font-size: small;
+  max-width: 50%;
+}
+
+div.pending-feature {
+  background-color: dodgerblue;
+  color: white;
+  margin-top: 6px;
+  padding: 5px;
+  text-align: center;
+  font-size: small;
+  max-width: 120px;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+pre.block-source {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+pre.block-source.error {
+  background-color: pink;
+  color: red;
+  font-weight: bold;
+}
+
+pre.block-source.pre-error {
+
+}
+
+pre.block-source.before-error {
+  margin-bottom: -14px;
+}
+
+pre.block-source.after-error {
+  color: gray;
+  margin-top: -14px;
+}
+
+pre.block-source.post-error {
+  color: gray;
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for nl.quintor.solitaire.game.CardMoveChecksSpec</h2>
+<hr></hr>
+<div class='back-link'>
+<a href='index.html'>&lt;&lt; Back</a>
+</div>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Wed Sep 04 11:09:16 CEST 2019 by Danil</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100,0%</td>
+<td>0,092 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<ul id='toc'>
+<li>
+<a href='#1669030141' class='feature-toc-ignored'>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</a>
+</li>
+<li>
+<a href='#1984895384' class='feature-toc-ignored'>Valid moves will not throw exceptions testing: #testcase</a>
+</li>
+<li>
+<a href='#431829989' class='feature-toc-ignored'>Valid input calling deckLevelChecks will not throw exception testing: #testcase</a>
+</li>
+<li>
+<a href='#1017207569' class='feature-toc-ignored'>Calling deckLevelChecks with same source and destination will throw exception</a>
+</li>
+<li>
+<a href='#-1590197751' class='feature-toc-ignored'>Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase</a>
+</li>
+<li>
+<a href='#479590989' class='feature-toc-ignored'>valid input calling deckLevelChecks does not throw exceptions testing: #testCase</a>
+</li>
+<li>
+<a href='#726494156' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Target deck is neither Stack nor Column. testing: Moving card to deck should only be allowed to Stack or column deck</a>
+</li>
+<li>
+<a href='#1545227933' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message An Ace has to be the first card of a Stack Pile testing: Moving card not being an ace to an empty stack</a>
+</li>
+<li>
+<a href='#-1650367749' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Stack Piles hold same-suit cards of increasing Rank from Ace to King testing: Moving card to stack should be increasing</a>
+</li>
+<li>
+<a href='#-778524425' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Stack Piles can only contain same-suit cards testing: Moving card to stack should be same suit</a>
+</li>
+<li>
+<a href='#-1883947393' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message A King has to be the first card of a Column testing: Moving card to empty column can only be a King</a>
+</li>
+<li>
+<a href='#-846564044' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Column cards have te alternate colors (red and black) testing: Moving card to column must be opposite suit</a>
+</li>
+<li>
+<a href='#2046670055' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Columns hold alternating-color cards of decreasing rank from King to Two testing: Moving card to column must be in descending rank</a>
+</li>
+<li>
+<a href='#1900329137' class='feature-toc-ignored'>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</a>
+</li>
+<li>
+<a href='#1378159794' class='feature-toc-ignored'>Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult</a>
+</li>
+<li>
+<a href='#751273891' class='feature-toc-ignored'>Given #card redSuit should return #expectedResult</a>
+</li>
+<li>
+<a href='#-1446486471' class='feature-toc-ignored'>Given a #joker redSuit should throw a exception</a>
+</li>
+</ul>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1669030141'>
+<span>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1984895384'>
+<span>Valid moves will not throw exceptions testing: #testcase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='431829989'>
+<span>Valid input calling deckLevelChecks will not throw exception testing: #testcase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1017207569'>
+<span>Calling deckLevelChecks with same source and destination will throw exception</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='-1590197751'>
+<span>Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='479590989'>
+<span>valid input calling deckLevelChecks does not throw exceptions testing: #testCase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='726494156'>
+<span>Invalid input calling cardLevelCheck will throw exception with message Target deck is neither Stack nor Column. testing: Moving card to deck should only be allowed to Stack or column deck</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[]</td>
+<td class='ex-value'>DIAMONDS EIGHT</td>
+<td class='ex-value'>Target deck is neither Stack nor Column.</td>
+<td class='ex-value'>Moving card to deck should only be allowed to Stack or column deck</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='1545227933'>
+<span>Invalid input calling cardLevelCheck will throw exception with message An Ace has to be the first card of a Stack Pile testing: Moving card not being an ace to an empty stack</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[]</td>
+<td class='ex-value'>DIAMONDS TWO</td>
+<td class='ex-value'>An Ace has to be the first card of a Stack Pile</td>
+<td class='ex-value'>Moving card not being an ace to an empty stack</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1650367749'>
+<span>Invalid input calling cardLevelCheck will throw exception with message Stack Piles hold same-suit cards of increasing Rank from Ace to King testing: Moving card to stack should be increasing</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[H A]</td>
+<td class='ex-value'>HEARTS THREE</td>
+<td class='ex-value'>Stack Piles hold same-suit cards of increasing Rank from Ace to King</td>
+<td class='ex-value'>Moving card to stack should be increasing</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-778524425'>
+<span>Invalid input calling cardLevelCheck will throw exception with message Stack Piles can only contain same-suit cards testing: Moving card to stack should be same suit</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[H A]</td>
+<td class='ex-value'>DIAMONDS TWO</td>
+<td class='ex-value'>Stack Piles can only contain same-suit cards</td>
+<td class='ex-value'>Moving card to stack should be same suit</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1883947393'>
+<span>Invalid input calling cardLevelCheck will throw exception with message A King has to be the first card of a Column testing: Moving card to empty column can only be a King</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[]</td>
+<td class='ex-value'>DIAMONDS TWO</td>
+<td class='ex-value'>A King has to be the first card of a Column</td>
+<td class='ex-value'>Moving card to empty column can only be a King</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-846564044'>
+<span>Invalid input calling cardLevelCheck will throw exception with message Column cards have te alternate colors (red and black) testing: Moving card to column must be opposite suit</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[H K]</td>
+<td class='ex-value'>DIAMONDS QUEEN</td>
+<td class='ex-value'>Column cards have te alternate colors (red and black)</td>
+<td class='ex-value'>Moving card to column must be opposite suit</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='2046670055'>
+<span>Invalid input calling cardLevelCheck will throw exception with message Columns hold alternating-color cards of decreasing rank from King to Two testing: Moving card to column must be in descending rank</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>exceptionMessage</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[H K]</td>
+<td class='ex-value'>SPADES JACK</td>
+<td class='ex-value'>Columns hold alternating-color cards of decreasing rank from King to Two</td>
+<td class='ex-value'>Moving card to column must be in descending rank</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1900329137'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1378159794'>
+<span>Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='751273891'>
+<span>Given #card redSuit should return #expectedResult</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='-1446486471'>
+<span>Given a #joker redSuit should throw a exception</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

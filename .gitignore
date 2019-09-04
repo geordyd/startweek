@@ -1,7 +1,0 @@
-.idea
-target
-*.iml
-apidocs
-src/main/java/nl/quintor/solitaire/DevMain.java
-build
-*.zip
