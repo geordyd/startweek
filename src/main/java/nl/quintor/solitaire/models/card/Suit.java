@@ -18,7 +18,7 @@ public enum Suit {
     private final String symbol;
 
     Suit(String competentSymbol, String windowsSymbol){
-        this.symbol = System.getProperty("os.name").contains("Windows") ? windowsSymbol : competentSymbol;
+        this.symbol = System.getProperty("os.name").contains("Windows") ? competentSymbol : competentSymbol;
     }
 
     /**

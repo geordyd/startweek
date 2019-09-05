@@ -110,25 +110,30 @@ public class CardMoveChecks {
             }
         }
 
-        Card lastCard = targetDeck.get(targetDeck.size() - 1);
-        if (targetDeck.getDeckType() == DeckType.STACK){
-            if (cardToAdd.getSuit() != lastCard.getSuit()){
-                throw new MoveException("Stack Piles can only contain same-suit cards");
+        if (!targetDeck.isEmpty()) {
+            Card lastCard = targetDeck.get(targetDeck.size() - 1);
+            if (targetDeck.getDeckType() == DeckType.STACK) {
+                if (cardToAdd.getSuit() != lastCard.getSuit()) {
+                    throw new MoveException("Stack Piles can only contain same-suit cards");
+                }
             }
-        }
-        if (targetDeck.getDeckType() == DeckType.STACK){
-            if (cardToAdd.getOrdinal() != lastCard.getOrdinal() - 1){
-                throw new MoveException("Stack Piles hold same-suit cards of increasing Rank from Ace to King");
+            if (targetDeck.getDeckType() == DeckType.STACK) {
+                if (cardToAdd.getOrdinal() != lastCard.getOrdinal() + 1) {
+                    if (cardToAdd.getRank() != Rank.TWO && lastCard.getRank() != Rank.ACE) {
+                        throw new MoveException("Stack Piles hold same-suit cards of increasing Rank from Ace to King");
+                    }
+                }
             }
-        }
-        if (targetDeck.getDeckType() == DeckType.COLUMN){
-            if (redSuit(cardToAdd) == redSuit(lastCard)){
-                throw new MoveException("Column cards have te alternate colors (red and black)");
+            if (targetDeck.getDeckType() == DeckType.COLUMN) {
+                if (!opposingColor(lastCard, cardToAdd)) {
+                    throw new MoveException("Column cards have te alternate colors (red and black)");
+                }
             }
-        }
-        if (targetDeck.getDeckType() == DeckType.COLUMN){
-            if (cardToAdd.getOrdinal() != lastCard.getOrdinal() + 1){
-                throw new MoveException("Columns hold alternating-color cards of decreasing rank from King to Two");
+            if (targetDeck.getDeckType() == DeckType.COLUMN) {
+                if (cardToAdd.getRank().ordinal() != lastCard.getRank().ordinal() - 1) {
+                    if (cardToAdd.getRank() != Rank.ACE && lastCard.getRank() != Rank.TWO)
+                    throw new MoveException("Columns hold alternating-color cards of decreasing rank from King to Two");
+                }
             }
         }
     }

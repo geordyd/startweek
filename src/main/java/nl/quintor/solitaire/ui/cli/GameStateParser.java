@@ -70,11 +70,11 @@ class GameStateParser {
      */
     protected static String getCardStringOrNull(Deck deck, int index){
         // TODO: Write implementation
-        Card selectedCard = deck.get(index);
         if (deck.isEmpty() || index >= deck.size() || index < 0){
             return null;
         }
         else {
+            Card selectedCard = deck.get(index);
             return selectedCard.getSuit().getSymbol() + " " + selectedCard.getRank().getSymbol();
         }
     }

@@ -6,10 +6,15 @@
       <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.ui.cli.GameStateParserSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.ui.cli.GameStateParserSpec.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/models/card/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/models/card/Suit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/models/card/Suit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/models/card/Suit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/quintor/solitaire/game/CardMoveChecksSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/quintor/solitaire/game/CardMoveChecksSpec.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,22 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName">
-    <configuration name="CardMoveChecksSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="solitaire" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.quintor.solitaire.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
-      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CardMoveChecksSpec.Valid input calling cardLevelChecks will not throw exceptions testing : #testCase">
     <configuration name="CardMoveChecksSpec.Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solitaire" />
       <extension name="coverage">
@@ -71,7 +61,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardMoveChecksSpec.Valid input calling cardLevelChecks will not throw exceptions testing : #testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solitaire" />
       <extension name="coverage">
         <pattern>
@@ -81,23 +71,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
       <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
-      <option name="METHOD_NAME" value="Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardMoveChecksSpec.Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="solitaire" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.quintor.solitaire.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
-      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
-      <option name="METHOD_NAME" value="Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase" />
+      <option name="METHOD_NAME" value="Valid input calling cardLevelChecks will not throw exceptions testing : #testCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,13 +93,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CardMoveChecksSpec.valid input calling deckLevelChecks does not throw exceptions testing: #testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solitaire" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.quintor.solitaire.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
+      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
+      <option name="METHOD_NAME" value="valid input calling deckLevelChecks does not throw exceptions testing: #testCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameStateParserSpec.cardStringOrNull should return #expectedResult when testing : #testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solitaire" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.quintor.solitaire.ui.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.ui.cli" />
+      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.ui.cli.GameStateParserSpec" />
+      <option name="METHOD_NAME" value="cardStringOrNull should return #expectedResult when testing : #testCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName" />
-        <item itemvalue="JUnit.CardMoveChecksSpec.Valid moves will not throw exceptions testing: #testcase" />
-        <item itemvalue="JUnit.CardMoveChecksSpec" />
+        <item itemvalue="JUnit.CardMoveChecksSpec.Valid input calling cardLevelChecks will not throw exceptions testing : #testCase" />
         <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase" />
-        <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase" />
+        <item itemvalue="JUnit.CardMoveChecksSpec.valid input calling deckLevelChecks does not throw exceptions testing: #testCase" />
+        <item itemvalue="JUnit.CardMoveChecksSpec.Valid moves will not throw exceptions testing: #testcase" />
+        <item itemvalue="JUnit.GameStateParserSpec.cardStringOrNull should return #expectedResult when testing : #testCase" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +153,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -164,6 +172,11 @@
           <url>file://$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy</url>
           <line>12</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

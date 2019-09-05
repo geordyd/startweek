@@ -251,7 +251,7 @@ div.footer {
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Thu Sep 05 08:59:12 CEST 2019 by Danil</div>
+<div class='date-test-ran'>Created on Thu Sep 05 10:15:26 CEST 2019 by Danil</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -263,12 +263,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>2</td>
+<td>11</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100,0%</td>
-<td>0,057 seconds</td>
+<td>0,092 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -282,12 +282,7 @@ div.footer {
 <tbody>
 <ul id='toc'>
 <li>
-<a href='#2014265853' class='feature-toc-pass'>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
-See H̲elp for instructions.| when testing: Invalid source move</a>
-</li>
-<li>
-<a href='#-239794351' class='feature-toc-pass'>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
-See H̲elp for instructions.| when testing: Invalid destination move</a>
+<a href='#1669030141' class='feature-toc-ignored'>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</a>
 </li>
 <li>
 <a href='#1984895384' class='feature-toc-ignored'>Valid moves will not throw exceptions testing: #testcase</a>
@@ -308,7 +303,37 @@ See H̲elp for instructions.| when testing: Invalid destination move</a>
 <a href='#-952702337' class='feature-toc-ignored'>Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase</a>
 </li>
 <li>
-<a href='#1900329137' class='feature-toc-ignored'>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</a>
+<a href='#104029933' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : Ace should be allowed on empty stack</a>
+</li>
+<li>
+<a href='#-1813454412' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : two should be allowed in stack containing ace</a>
+</li>
+<li>
+<a href='#2104431272' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : King should be allowed as first card in a column deck</a>
+</li>
+<li>
+<a href='#-748145887' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with Diamond card should allow club card with decreased value of one</a>
+</li>
+<li>
+<a href='#-1803715676' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with Diamond card should allow spade card with decreased value of one</a>
+</li>
+<li>
+<a href='#-2119430215' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with hearts card should allow spade card with decreased value of one</a>
+</li>
+<li>
+<a href='#-1866708884' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with hearts card should allow club card with decreased value of one</a>
+</li>
+<li>
+<a href='#-2070555181' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with clubs card should allow hearts card with decreased value of one</a>
+</li>
+<li>
+<a href='#-853058964' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with clubs card should allow diamond card with decreased value of one</a>
+</li>
+<li>
+<a href='#-1620200837' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with spade card should allow hearts card with decreased value of one</a>
+</li>
+<li>
+<a href='#223023812' class='feature-toc-pass'>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with spade card should allow diamond card with decreased value of one</a>
 </li>
 <li>
 <a href='#1378159794' class='feature-toc-ignored'>Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult</a>
@@ -322,9 +347,8 @@ See H̲elp for instructions.| when testing: Invalid destination move</a>
 </ul>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='2014265853'>
-<span>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
-See H̲elp for instructions.| when testing: Invalid source move</span>
+<div class='feature-description ignored' id='1669030141'>
+<span>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -353,95 +377,6 @@ See H̲elp for instructions.| when testing: Invalid source move</span>
 </td>
 <td>
 <div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>testcase</th>
-<th class='ex-header'>input</th>
-<th class='ex-header'>exception</th>
-<th class='ex-header'>message</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>Invalid source move</td>
-<td class='ex-value'>[M, Z, G]</td>
-<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
-<td class='ex-value'>Invalid Move syntax. "Z" is not a valid source location.
-See H̲elp for instructions.</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-239794351'>
-<span>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
-See H̲elp for instructions.| when testing: Invalid destination move</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>testcase</th>
-<th class='ex-header'>input</th>
-<th class='ex-header'>exception</th>
-<th class='ex-header'>message</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>Invalid destination move</td>
-<td class='ex-value'>[M, O, Z]</td>
-<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
-<td class='ex-value'>Invalid Move syntax. "Z" is not a valid destination location.
-See H̲elp for instructions.</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
 </td>
 </tr>
 <tr>
@@ -634,8 +569,8 @@ See H̲elp for instructions.</td>
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description ignored' id='1900329137'>
-<span>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</span>
+<div class='feature-description' id='104029933'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : Ace should be allowed on empty stack</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -656,6 +591,530 @@ See H̲elp for instructions.</td>
 </td>
 <td>
 <div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[]</td>
+<td class='ex-value'>CLUBS ACE</td>
+<td class='ex-value'>Ace should be allowed on empty stack</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1813454412'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : two should be allowed in stack containing ace</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♦ A]</td>
+<td class='ex-value'>DIAMONDS TWO</td>
+<td class='ex-value'>two should be allowed in stack containing ace</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='2104431272'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : King should be allowed as first card in a column deck</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[]</td>
+<td class='ex-value'>DIAMONDS KING</td>
+<td class='ex-value'>King should be allowed as first card in a column deck</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-748145887'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with Diamond card should allow club card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♦ K]</td>
+<td class='ex-value'>CLUBS QUEEN</td>
+<td class='ex-value'>column deck with Diamond card should allow club card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1803715676'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with Diamond card should allow spade card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♦ K]</td>
+<td class='ex-value'>SPADES QUEEN</td>
+<td class='ex-value'>column deck with Diamond card should allow spade card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-2119430215'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with hearts card should allow spade card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♥ K]</td>
+<td class='ex-value'>SPADES QUEEN</td>
+<td class='ex-value'>column deck with hearts card should allow spade card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1866708884'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with hearts card should allow club card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♥ K]</td>
+<td class='ex-value'>CLUBS QUEEN</td>
+<td class='ex-value'>column deck with hearts card should allow club card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-2070555181'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with clubs card should allow hearts card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♧ K]</td>
+<td class='ex-value'>HEARTS QUEEN</td>
+<td class='ex-value'>column deck with clubs card should allow hearts card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-853058964'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with clubs card should allow diamond card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♧ K]</td>
+<td class='ex-value'>DIAMONDS QUEEN</td>
+<td class='ex-value'>column deck with clubs card should allow diamond card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1620200837'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with spade card should allow hearts card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♤ K]</td>
+<td class='ex-value'>HEARTS QUEEN</td>
+<td class='ex-value'>column deck with spade card should allow hearts card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='223023812'>
+<span>Valid input calling cardLevelChecks will not throw exceptions testing : column deck with spade card should allow diamond card with decreased value of one</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Expect:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>targetDeck</th>
+<th class='ex-header'>cardToAdd</th>
+<th class='ex-header'>testCase</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>[♤ K]</td>
+<td class='ex-value'>DIAMONDS QUEEN</td>
+<td class='ex-value'>column deck with spade card should allow diamond card with decreased value of one</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
 </td>
 </tr>
 <tr>
