@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae8e1e46-7e5b-4d7a-85f1-8df9463c7cad" name="Default Changelist" comment="" />
+    <list default="true" id="ae8e1e46-7e5b-4d7a-85f1-8df9463c7cad" name="Default Changelist" comment="opdr 1 - 8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QJu7Ijxxvyzlfr68dSI0vO3GxC" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -26,8 +39,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CardMoveChecksSpec.Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase">
-    <configuration name="CardMoveChecksSpec.Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName">
+    <configuration name="CardMoveChecksSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solitaire" />
       <extension name="coverage">
         <pattern>
@@ -37,8 +50,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
       <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
-      <option name="METHOD_NAME" value="Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -54,6 +66,22 @@
       <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
       <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
       <option name="METHOD_NAME" value="Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solitaire" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.quintor.solitaire.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
+      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
+      <option name="METHOD_NAME" value="Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardMoveChecksSpec.Valid input calling deckLevelChecks will not throw exception testing: #testcase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardMoveChecksSpec.Valid moves will not throw exceptions testing: #testcase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solitaire" />
       <extension name="coverage">
         <pattern>
@@ -85,23 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
       <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.CardMoveChecksSpec" />
-      <option name="METHOD_NAME" value="Valid input calling deckLevelChecks will not throw exception testing: #testcase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameStateControllerSpec.init should create a valid game state" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="solitaire" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.quintor.solitaire.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.quintor.solitaire.game" />
-      <option name="MAIN_CLASS_NAME" value="nl.quintor.solitaire.game.GameStateControllerSpec" />
-      <option name="METHOD_NAME" value="init should create a valid game state" />
+      <option name="METHOD_NAME" value="Valid moves will not throw exceptions testing: #testcase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName" />
+        <item itemvalue="JUnit.CardMoveChecksSpec.Valid moves will not throw exceptions testing: #testcase" />
+        <item itemvalue="JUnit.CardMoveChecksSpec" />
         <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase" />
         <item itemvalue="JUnit.CardMoveChecksSpec.Invalid input calling deckLevelChecks will throw exception with message: |#exceptionMessage| testing: #testcase" />
-        <item itemvalue="JUnit.CardMoveChecksSpec.Valid input calling deckLevelChecks will not throw exception testing: #testcase" />
-        <item itemvalue="JUnit.CardMoveChecksSpec.Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult" />
-        <item itemvalue="JUnit.GameStateControllerSpec.init should create a valid game state" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +141,31 @@
       <updated>1567500851128</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="opdr 1 - 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="opdr 1 - 8" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

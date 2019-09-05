@@ -251,7 +251,7 @@ div.footer {
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Wed Sep 04 11:09:16 CEST 2019 by Danil</div>
+<div class='date-test-ran'>Created on Thu Sep 05 08:59:12 CEST 2019 by Danil</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -263,12 +263,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>7</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100,0%</td>
-<td>0,092 seconds</td>
+<td>0,057 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -282,7 +282,12 @@ div.footer {
 <tbody>
 <ul id='toc'>
 <li>
-<a href='#1669030141' class='feature-toc-ignored'>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</a>
+<a href='#2014265853' class='feature-toc-pass'>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.| when testing: Invalid source move</a>
+</li>
+<li>
+<a href='#-239794351' class='feature-toc-pass'>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.| when testing: Invalid destination move</a>
 </li>
 <li>
 <a href='#1984895384' class='feature-toc-ignored'>Valid moves will not throw exceptions testing: #testcase</a>
@@ -300,25 +305,7 @@ div.footer {
 <a href='#479590989' class='feature-toc-ignored'>valid input calling deckLevelChecks does not throw exceptions testing: #testCase</a>
 </li>
 <li>
-<a href='#726494156' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Target deck is neither Stack nor Column. testing: Moving card to deck should only be allowed to Stack or column deck</a>
-</li>
-<li>
-<a href='#1545227933' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message An Ace has to be the first card of a Stack Pile testing: Moving card not being an ace to an empty stack</a>
-</li>
-<li>
-<a href='#-1650367749' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Stack Piles hold same-suit cards of increasing Rank from Ace to King testing: Moving card to stack should be increasing</a>
-</li>
-<li>
-<a href='#-778524425' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Stack Piles can only contain same-suit cards testing: Moving card to stack should be same suit</a>
-</li>
-<li>
-<a href='#-1883947393' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message A King has to be the first card of a Column testing: Moving card to empty column can only be a King</a>
-</li>
-<li>
-<a href='#-846564044' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Column cards have te alternate colors (red and black) testing: Moving card to column must be opposite suit</a>
-</li>
-<li>
-<a href='#2046670055' class='feature-toc-pass'>Invalid input calling cardLevelCheck will throw exception with message Columns hold alternating-color cards of decreasing rank from King to Two testing: Moving card to column must be in descending rank</a>
+<a href='#-952702337' class='feature-toc-ignored'>Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase</a>
 </li>
 <li>
 <a href='#1900329137' class='feature-toc-ignored'>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</a>
@@ -335,8 +322,9 @@ div.footer {
 </ul>
 <tr>
 <td colspan='10'>
-<div class='feature-description ignored' id='1669030141'>
-<span>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</span>
+<div class='feature-description' id='2014265853'>
+<span>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.| when testing: Invalid source move</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -365,6 +353,95 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>testcase</th>
+<th class='ex-header'>input</th>
+<th class='ex-header'>exception</th>
+<th class='ex-header'>message</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>Invalid source move</td>
+<td class='ex-value'>[M, Z, G]</td>
+<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
+<td class='ex-value'>Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-239794351'>
+<span>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.| when testing: Invalid destination move</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>testcase</th>
+<th class='ex-header'>input</th>
+<th class='ex-header'>exception</th>
+<th class='ex-header'>message</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>Invalid destination move</td>
+<td class='ex-value'>[M, O, Z]</td>
+<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
+<td class='ex-value'>Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.</td>
+<td class='ex-result'>OK</td>
+</tr>
+</tbody>
+</table>
+</div>
 </td>
 </tr>
 <tr>
@@ -523,8 +600,8 @@ div.footer {
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='726494156'>
-<span>Invalid input calling cardLevelCheck will throw exception with message Target deck is neither Stack nor Column. testing: Moving card to deck should only be allowed to Stack or column deck</span>
+<div class='feature-description ignored' id='-952702337'>
+<span>Invalid input calling cardLevelCheck will throw exception with message #exceptionMessage testing: #testCase</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -553,392 +630,6 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[]</td>
-<td class='ex-value'>DIAMONDS EIGHT</td>
-<td class='ex-value'>Target deck is neither Stack nor Column.</td>
-<td class='ex-value'>Moving card to deck should only be allowed to Stack or column deck</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='1545227933'>
-<span>Invalid input calling cardLevelCheck will throw exception with message An Ace has to be the first card of a Stack Pile testing: Moving card not being an ace to an empty stack</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[]</td>
-<td class='ex-value'>DIAMONDS TWO</td>
-<td class='ex-value'>An Ace has to be the first card of a Stack Pile</td>
-<td class='ex-value'>Moving card not being an ace to an empty stack</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-1650367749'>
-<span>Invalid input calling cardLevelCheck will throw exception with message Stack Piles hold same-suit cards of increasing Rank from Ace to King testing: Moving card to stack should be increasing</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[H A]</td>
-<td class='ex-value'>HEARTS THREE</td>
-<td class='ex-value'>Stack Piles hold same-suit cards of increasing Rank from Ace to King</td>
-<td class='ex-value'>Moving card to stack should be increasing</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-778524425'>
-<span>Invalid input calling cardLevelCheck will throw exception with message Stack Piles can only contain same-suit cards testing: Moving card to stack should be same suit</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[H A]</td>
-<td class='ex-value'>DIAMONDS TWO</td>
-<td class='ex-value'>Stack Piles can only contain same-suit cards</td>
-<td class='ex-value'>Moving card to stack should be same suit</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-1883947393'>
-<span>Invalid input calling cardLevelCheck will throw exception with message A King has to be the first card of a Column testing: Moving card to empty column can only be a King</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[]</td>
-<td class='ex-value'>DIAMONDS TWO</td>
-<td class='ex-value'>A King has to be the first card of a Column</td>
-<td class='ex-value'>Moving card to empty column can only be a King</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-846564044'>
-<span>Invalid input calling cardLevelCheck will throw exception with message Column cards have te alternate colors (red and black) testing: Moving card to column must be opposite suit</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[H K]</td>
-<td class='ex-value'>DIAMONDS QUEEN</td>
-<td class='ex-value'>Column cards have te alternate colors (red and black)</td>
-<td class='ex-value'>Moving card to column must be opposite suit</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='2046670055'>
-<span>Invalid input calling cardLevelCheck will throw exception with message Columns hold alternating-color cards of decreasing rank from King to Two testing: Moving card to column must be in descending rank</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>targetDeck</th>
-<th class='ex-header'>cardToAdd</th>
-<th class='ex-header'>exceptionMessage</th>
-<th class='ex-header'>testCase</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>[H K]</td>
-<td class='ex-value'>SPADES JACK</td>
-<td class='ex-value'>Columns hold alternating-color cards of decreasing rank from King to Two</td>
-<td class='ex-value'>Moving card to column must be in descending rank</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
 </td>
 </tr>
 <tr>

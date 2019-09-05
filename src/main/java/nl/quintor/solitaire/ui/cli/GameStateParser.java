@@ -1,5 +1,6 @@
 package nl.quintor.solitaire.ui.cli;
 
+import nl.quintor.solitaire.models.card.Card;
 import nl.quintor.solitaire.models.deck.Deck;
 import nl.quintor.solitaire.models.state.GameState;
 
@@ -69,7 +70,13 @@ class GameStateParser {
      */
     protected static String getCardStringOrNull(Deck deck, int index){
         // TODO: Write implementation
-        return null;
+        Card selectedCard = deck.get(index);
+        if (deck.isEmpty() || index >= deck.size() || index < 0){
+            return null;
+        }
+        else {
+            return selectedCard.getSuit().getSymbol() + " " + selectedCard.getRank().getSymbol();
+        }
     }
 
     /**
@@ -81,6 +88,19 @@ class GameStateParser {
      * @param totalLength The total length that the String must become
      */
     protected static void padNAdd(StringBuilder builder, String string, int totalLength){
-        // TODO: Write implementation
+        if (string.length() == 1){
+            builder.append(" " + string);
+            for (int i = totalLength; i > (string.length() + 1); i--) {
+                builder.append(" ");
+            }
+        }
+        else {
+            if (string.length() > 1) {
+                builder.append(string);
+            }
+            for (int i = totalLength; i > string.length(); i--) {
+                builder.append(" ");
+            }
+        }
     }
 }

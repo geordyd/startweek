@@ -8,6 +8,8 @@ import nl.quintor.solitaire.models.card.Suit;
 import nl.quintor.solitaire.models.deck.Deck;
 import nl.quintor.solitaire.models.deck.DeckType;
 
+import java.util.List;
+
 /**
  * Library class for card move legality checks. The class is not instantiable, all constructors are private and all methods are
  * static. The class contains several private helper methods. All methods throw {@link MoveException}s, which can
@@ -30,13 +32,25 @@ public class CardMoveChecks {
      * @throws MoveException on syntax error
      */
     public static void checkPlayerInput(String[] input) throws MoveException{
-        // TODO: Write implementation
-//        if (input[1] != ){
-//            throw new MoveException("Invalid Move syntax. " + input[1] + " is not a valid source location.\nSee H̲elp for instructions.");
-//        }
-//        if (input[2] != ){
-//            throw new MoveException("Invalid Move syntax. " + input[2] + " is not a valid destination location.\nSee H̲elp for instructions.")
-//        }
+        List<String> sourceCoordStart = List.of(
+            "A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7",
+            "B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7",
+            "C0", "C1", "C2", "C3", "C4", "C5", "C6", "C7",
+            "D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7",
+            "E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7",
+            "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7",
+            "G0", "G1", "G2", "G3", "G4", "G5", "G6", "G7",
+            "O",
+            "SA", "SB", "SC", "SD");
+        List<String> destCoordStart = List.of(
+            "A", "B", "C", "D", "E", "F", "G", "O", "SA", "SB", "SC", "SD");
+
+        if (!sourceCoordStart.contains(input[1])){
+            throw new MoveException("Invalid Move syntax. " + "\"" + input[1] + "\"" + " is not a valid source location.\nSee H̲elp for instructions.");
+        }
+        if (!destCoordStart.contains(input[2])){
+            throw new MoveException("Invalid Move syntax. " + "\"" + input[2] + "\"" + " is not a valid destination location.\nSee H̲elp for instructions.");
+        }
 
     }
 
@@ -82,7 +96,6 @@ public class CardMoveChecks {
      * @throws MoveException on illegal move
      */
     public static void cardLevelChecks(Deck targetDeck, Card cardToAdd) throws MoveException {
-        // TODO: Write implementation
         if (targetDeck.getDeckType() != DeckType.STACK && targetDeck.getDeckType() != DeckType.COLUMN){
             throw new MoveException("Target deck is neither Stack nor Column.");
         }
