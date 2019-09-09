@@ -102,7 +102,7 @@ class CardMoveChecksSpec extends Specification {
         TestUtil.createTestDeckWithCards(DeckType.STACK, [new Card(Suit.HEARTS, Rank.ACE)]) | new Card(Suit.HEARTS, Rank.THREE) | 'Stack Piles hold same-suit cards of increasing Rank from Ace to King' || "Moving card to stack should be increasing"
         TestUtil.createTestDeckWithCards(DeckType.STACK, [new Card(Suit.HEARTS, Rank.ACE)]) | new Card(Suit.DIAMONDS, Rank.TWO) | 'Stack Piles can only contain same-suit cards' || "Moving card to stack should be same suit"
         new Deck(DeckType.COLUMN)| new Card(Suit.DIAMONDS, Rank.TWO) | 'A King has to be the first card of a Column' || "Moving card to empty column can only be a King"
-        TestUtil.createTestDeckWithCards(DeckType.COLUMN, [new Card(Suit.HEARTS, Rank.KING)]) | new Card(Suit.DIAMONDS, Rank.QUEEN) | 'Column cards have te alternate colors (red and black)' || "Moving card to column must be opposite suit"
+        TestUtil.createTestDeckWithCards(DeckType.COLUMN, [new Card(Suit.HEARTS, Rank.KING)]) | new Card(Suit.DIAMONDS, Rank.QUEEN) | 'Column cards have to alternate colors (red and black)' || "Moving card to column must be opposite suit"
         TestUtil.createTestDeckWithCards(DeckType.COLUMN, [new Card(Suit.HEARTS, Rank.KING)]) | new Card(Suit.SPADES, Rank.JACK) | 'Columns hold alternating-color cards of decreasing rank from King to Two' || "Moving card to column must be in descending rank"
     }
 

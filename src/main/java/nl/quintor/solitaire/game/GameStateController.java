@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
 
+import static nl.quintor.solitaire.models.deck.Deck.createDefaultDeck;
+
 /**
  * Library class for GameState initiation and status checks that are called from {@link nl.quintor.solitaire.Main}.
  * The class is not instantiable, all constructors are private and all methods are static.

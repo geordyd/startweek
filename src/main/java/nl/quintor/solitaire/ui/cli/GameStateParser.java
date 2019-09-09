@@ -58,7 +58,13 @@ class GameStateParser {
      */
     protected static boolean printRow(StringBuilder builder, Collection<Deck> columns, int row){
         // TODO: Write implementation
-        return true;
+        //voor iedere kolom haal de kaarten op met als index 'row'
+        //voor iedere kaart printbaar de suit + de rank
+        for ( Deck deck : columns
+             ) {
+                Card selectedCard = deck.get(row);
+                for ( Card selectedCard : deck)
+        }
     }
 
     /**
@@ -69,7 +75,6 @@ class GameStateParser {
      * @return the requested card or null
      */
     protected static String getCardStringOrNull(Deck deck, int index){
-        // TODO: Write implementation
         if (deck.isEmpty() || index >= deck.size() || index < 0){
             return null;
         }
