@@ -60,10 +60,10 @@ class GameStateParser {
         // TODO: Write implementation
         //voor iedere kolom haal de kaarten op met als index 'row'
         //voor iedere kaart printbaar de suit + de rank
-        for ( Deck deck : columns
-             ) {
-                Card selectedCard = deck.get(row);
-                for ( Card selectedCard : deck)
+        for ( Deck deck : columns ) {
+                for ( Card selectedCard : deck) {
+
+                }
         }
     }
 

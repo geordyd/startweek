@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae8e1e46-7e5b-4d7a-85f1-8df9463c7cad" name="Default Changelist" comment="opdr 1 - 8">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.game.CardMoveChecksSpec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.ui.cli.GameStateParserSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/nl.quintor.solitaire.ui.cli.GameStateParserSpec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/CardMoveChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/GameStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/game/GameStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/quintor/solitaire/ui/cli/GameStateParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/game/CardMoveChecksSpec.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/ui/cli/GameStateParserSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/nl/quintor/solitaire/ui/cli/GameStateParserSpec.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/game/CardMoveChecks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/quintor/solitaire/ui/cli/GameStateParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/quintor/solitaire/ui/cli/GameStateParserSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/quintor/solitaire/ui/cli/GameStateParserSpec.class" afterDir="false" />
-    </list>
+    <list default="true" id="ae8e1e46-7e5b-4d7a-85f1-8df9463c7cad" name="Default Changelist" comment="opdr 1 - 8" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
